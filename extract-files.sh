@@ -25,10 +25,6 @@ function blob_fixup() {
 		# Hex edit /firmware/image to /vendor/firmware_mnt to delete the outdated rootdir symlinks
 		sed -i "s|/firmware/image|/vendor/f/image|g" "${2}"
 		;;
-
-	# Hex edit /firmware/image to /vendor/firmware_mnt to delete the outdated rootdir symlinks
-	vendor/lib64/libqfp-service.so)
-		sed -i "s|/firmware/image|/vendor/f/image|g" "${2}"
 	esac
 }
 
@@ -40,7 +36,7 @@ fi
 
 set -e
 
-export DEVICE=x2
+export DEVICE=x10
 export DEVICE_COMMON=msm8996-common
 export VENDOR=leeco
 

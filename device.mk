@@ -21,7 +21,7 @@
 # definition file).
 #
 
-$(call inherit-product-if-exists, vendor/leeco/x2/x2-vendor.mk)
+$(call inherit-product-if-exists, vendor/leeco/x10/x10-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

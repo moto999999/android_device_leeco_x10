@@ -19,7 +19,7 @@
 set -e
 
 # Required!
-export DEVICE=x2
+export DEVICE=x10
 export DEVICE_COMMON=msm8996-common
 export VENDOR=leeco
 

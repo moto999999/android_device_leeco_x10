@@ -18,23 +18,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device
-$(call inherit-product, device/leeco/x2/device.mk)
+$(call inherit-product, device/leeco/x10/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_x2
-PRODUCT_DEVICE := x2
+PRODUCT_NAME := lineage_x10
+PRODUCT_DEVICE := x10
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco
 
 PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=le_x2 \
-    PRODUCT_NAME=LeMax2_WW \
-    PRIVATE_BUILD_DESC="le_x2-user 6.0.1 FKXOSOP5801910311S eng.letv.20161031.012138.wechatpay release-keys"
+    TARGET_DEVICE=le_x10 \
+    PRODUCT_NAME=Le2Pro_CN \
+    PRIVATE_BUILD_DESC="LEXCNFN6061705181T release-keys"
 
-BUILD_FINGERPRINT := LeEco/LeMax2_WW/le_x2:6.0.1/FKXOSOP5801910311S/letv10310125:user/release-keys
+BUILD_FINGERPRINT := LeEco/Le2Pro_CN/le_x10:7.1.1/LEXCNFN6061705181T/letv05181516:userdebug/test-keys
 
 TARGET_VENDOR := leeco

@@ -24,16 +24,16 @@
 # inherit from msm8996-common
 -include device/leeco/msm8996-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/leeco/x2
+DEVICE_PATH := device/leeco/x10
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := le_x2,le_x2_india,le_x2_na,LeMax2_CN,LeMax2_NA,LeMax2_WW,LeMax2
+TARGET_OTA_ASSERT_DEVICE := le_x10,LeMax3
 
 # Kernel
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
-BOARD_RAMDISK_OFFSET     := 0x02200000
+BOARD_RAMDISK_OFFSET     := 0x01000000
 
 TARGET_KERNEL_CONFIG := lineage_x2_defconfig
 
@@ -48,4 +48,4 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # inherit from the proprietary version
--include vendor/leeco/x2/BoardConfigVendor.mk
+-include vendor/leeco/x10/BoardConfigVendor.mk
