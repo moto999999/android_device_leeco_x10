@@ -24,9 +24,9 @@
 # inherit from msm8996-common
 -include device/leeco/msm8996-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := le_x2,LeMax2_CN,LeMax2_NA
+TARGET_OTA_ASSERT_DEVICE := le_x10,Le2Pro_CN,LeMax3
 
-DEVICE_PATH := device/leeco/x2
+DEVICE_PATH := device/leeco/x10
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
@@ -51,4 +51,4 @@ BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # inherit from the proprietary version
--include vendor/leeco/x2/BoardConfigVendor.mk
+-include vendor/leeco/x10/BoardConfigVendor.mk
