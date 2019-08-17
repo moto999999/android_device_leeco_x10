@@ -107,7 +107,7 @@ case "$usb_config" in
           ;;
           *)
 	  case "$soc_hwplatform" in
-	      "Dragon" | "SBC")
+	      "Dragon")
 	          setprop persist.sys.usb.config diag,adb
 	      ;;
               *)
